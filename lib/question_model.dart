@@ -69,8 +69,16 @@ List<Question> getQuestions() {
   list.add(Question(
     "Flutter sử dụng dart làm ngôn ngữ?",
     [
-      Answer("True", true),
-      Answer("False", false),
+      Answer("Đúng", true),
+      Answer("Sai", false),
+    ],
+  ));
+
+  list.add(Question(
+    "Ứng dụng di động có thể chạy trên google được không?",
+    [
+      Answer("Có thể chạy", true),
+      Answer("Không thể chạy", false),
     ],
   ));
 
