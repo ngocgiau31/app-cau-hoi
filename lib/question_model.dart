@@ -17,7 +17,7 @@ List<Question> getQuestions() {
   //ADD questions and answer here
 
   list.add(Question(
-    "Who is the owner of Flutter?",
+    "Ai là chủ sở hữu của Flutter?",
     [
       Answer("Nokia", false),
       Answer("Samsung", false),
@@ -27,7 +27,7 @@ List<Question> getQuestions() {
   ));
 
   list.add(Question(
-    "Who owns Iphone?",
+    "Tổ chức sở hữu Iphone?",
     [
       Answer("Apple", true),
       Answer("Microsoft", false),
@@ -37,17 +37,17 @@ List<Question> getQuestions() {
   ));
 
   list.add(Question(
-    "Youtube is _________  platform?",
+    " Nền tảng Youtube là _________  ?",
     [
-      Answer("Music Sharing", false),
-      Answer("Video Sharing", false),
-      Answer("Live Streaming", false),
-      Answer("All of the above", true),
+      Answer("Chia sẻ âm nhạc", false),
+      Answer("Chia sẻ video", false),
+      Answer("Phát trực tiếp", false),
+      Answer("Tất cả ý trên", true),
     ],
   ));
 
   list.add(Question(
-    "Flutter user dart as a language?",
+    "Flutter sử dụng dart làm ngôn ngũ?",
     [
       Answer("True", true),
       Answer("False", false),
