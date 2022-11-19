@@ -15,7 +15,7 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 5, 50, 80),
+      backgroundColor: Color.fromARGB(255, 206, 148, 176),
       body: Container(
         margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
         child:
@@ -54,7 +54,7 @@ class _QuizScreenState extends State<QuizScreen> {
           width: double.infinity,
           padding: const EdgeInsets.all(32),
           decoration: BoxDecoration(
-            color: Colors.orangeAccent,
+            color: Color.fromARGB(255, 75, 143, 191),
             borderRadius: BorderRadius.circular(16),
           ),
           child: Text(
@@ -91,7 +91,8 @@ class _QuizScreenState extends State<QuizScreen> {
         child: Text(answer.answerText),
         style: ElevatedButton.styleFrom(
           shape: const StadiumBorder(),
-          primary: isSelected ? Colors.orangeAccent : Colors.white,
+          primary:
+              isSelected ? Color.fromARGB(255, 75, 143, 191) : Colors.white,
           onPrimary: isSelected ? Colors.white : Colors.black,
         ),
         onPressed: () {
@@ -121,7 +122,7 @@ class _QuizScreenState extends State<QuizScreen> {
         child: Text(isLastQuestion ? "Chọn" : "Tiếp theo"),
         style: ElevatedButton.styleFrom(
           shape: const StadiumBorder(),
-          primary: Colors.blueAccent,
+          primary: Color.fromARGB(255, 174, 187, 122),
           onPrimary: Colors.white,
         ),
         onPressed: () {
@@ -143,10 +144,10 @@ class _QuizScreenState extends State<QuizScreen> {
     if (score >= questionList.length * 0.6) {
       isPassed = true;
     }
-    String title = isPassed ? "Đúng" : "Sai";
+    String title = isPassed ? "Đúng!" : "Sai!";
     return AlertDialog(
       title: Text(
-        title + "Điểm của bạn là $score",
+        title + " Điểm của bạn là $score",
         style: TextStyle(color: isPassed ? Colors.green : Colors.redAccent),
       ),
       content: ElevatedButton(
